@@ -1,0 +1,16 @@
+[
+    {
+        "name": "quic-dart",
+        "description": "A pure Dart implementation of QUIC, primarily defined in RFC 9000.",
+        "status": "working",
+        "primary-language": "Dart",
+        "url": "https://github.com/masonfrykman/quic-dart"
+    },
+    {
+        "name": "frykman.dev",
+        "description": "This website!",
+        "status": "working",
+        "primary-language": "HTML/CSS/JS",
+        "url": "https://github.com/masonfrykman/frykman.dev"
+    }
+]
