@@ -59,9 +59,7 @@ function makeProjectTile(name, description, status, primaryLanguage, url) {
 }
 
 window.onload = async () => {
-    var jsonRequest = new Request(window.location.host + "/res/projects.json");
-
-    let projectsArray = await jsonRequest.json();
+    let projectsArray = await (await fetch(window.location.host + "/res/projects.json")).json();
 
     if(projectsArray === undefined) {
         // put tumbleweed.
