@@ -1,131 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-#navbar {
-    background-color: rgb(45, 9, 65);
-    width: 100vw;
-    height: 80px;
-    padding-left: 0;
-    padding-right: 0;
-    
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
+@font-face {
+    font-family: "Mulish";
+    src: url("/res/font/Mulish/Mulish-VariableFont_wght.ttf");
 }
 
-#navbar-name {
-    font-family: Raleway, Helvetica, 'Helvetica Neue', Arial, sans-serif;
-    padding-left: 30px;
-    font-weight: 200;
-}
-
-#navbar-links {
-    padding-right: 30px;
-    font-family: Raleway, Helvetica, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16pt;
-}
-
-#navbar-links a {
-    color: white;
-    margin: 5px;
-}
-
-#navbar-links .here {
-    color: rgb(220, 177, 233)
-}
-
-#tlc {
-    padding: 20px;
+@font-face {
+    font-family: "Mulish";
+    font-style: italic;
+    src: url("/res/font/Mulish/Mulish-Italic-VariableFont_wght.ttf");
 }
 
 body {
+    font-family: "Mulish", "Helvetica", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    border: none;
-    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
-    background-color: rgb(79, 16, 113);
-    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
 }
 
-/*
-Projects Page
-*/
 
-.project-tiling {
+
+.flex {
     display: flex;
 }
 
-.project-tiling .tile {
-    height: 170px;
-    width: 300px;
-    padding: 15px;
-    background-color: white;
-    color: black;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border: solid 1px gray;
-    cursor: pointer;
-}
-
-.tile:link {
-    text-decoration: none;
-}
-.tile:visited {
-    text-decoration: none;
-}
-.tile:hover {
-    text-decoration: none;
-}
-.tile:active {
-    text-decoration: none;
-}
-
-.project-tiling .tile .ltr-flex {
-    justify-content: last;
-}
-
-.project-tiling .tile .bottom {
-    justify-self: end;
-}
-
-.tile h2 {
-    margin-bottom: 5px;
-}
-
-.status.wip {
-    background-color: green;
-}
-
-.status.abandoned-or-other {
-    background-color: gray;
-}
-
-.status.fin {
-    background-color: red;
-}
-
-.lang.dart {
-    background-color: rgb(55, 184, 244)
-}
-
-.lang.html {
-    background-color: orangered;
-}
-
-.ltr-flex {
-    display: flex;
+.flex.ltr {
     flex-direction: row;
-    margin: 0;
-    margin-top: auto;
-    padding: 0;
+    justify-content: center;
 }
 
-.ltr-flex p {
-    margin: 0;
-    color: white;
-    padding: 5px;
+.flex.center {
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 13pt;
+}
+
+b {
+    font-weight: 700;
 }
