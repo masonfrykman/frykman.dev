@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Mulish";
+    src: url("/res/font/Mulish/Mulish-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Mulish";
+    font-style: italic;
+    src: url("/res/font/Mulish/Mulish-Italic-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "Mulish", "Helvetica", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex.ltr {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex.center {
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 13pt;
+}
+
+b {
+    font-weight: 700;
+}
