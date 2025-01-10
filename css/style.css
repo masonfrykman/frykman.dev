@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Mulish", "Helvetica", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Mulish", "Helvetica", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Times New Roman", "Times", sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -26,14 +26,38 @@ body {
     display: flex;
 }
 
+.standard-padding {
+    box-sizing: border-box;
+    padding: 18pt;
+}
+
 .flex.ltr {
     flex-direction: row;
     justify-content: center;
 }
 
+.flex.ltr.list * {
+    padding-right: 6pt;
+    flex-wrap: wrap;
+}
+
 .flex.center {
     align-items: center;
     justify-content: center;
+}
+
+.flex.bottom {
+    justify-content: center;
+    align-items: end;
+}
+
+.flex.top {
+    justify-content: center;
+    align-items: start;
+}
+
+.white {
+    color: white;
 }
 
 span {
